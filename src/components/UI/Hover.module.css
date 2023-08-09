@@ -1,0 +1,16 @@
+/* Initially hide the info-tag */
+.info-tag {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  /* Show the info-tag on hover */
+  i:hover .info-tag {
+    display: block;
+  }
+  

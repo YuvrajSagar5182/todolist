@@ -1,0 +1,58 @@
+.todos {
+
+  margin: 5rem auto;
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 40rem;
+
+}
+
+.todos ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.header {
+  background: #4f005f;
+  padding: 1rem;
+  border: white;
+  border-radius: 0.6rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+}
+
+.todos li {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  margin-left: 0;
+  padding: 0.5rem;
+}
+
+
+.iconbuttons {
+  display: inline;
+  margin-left: 10px;
+}
+
+
+
+.iconbuttons i {
+
+  font-size: 1.2rem;
+  color: #4f005f;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.iconbuttons i:hover {
+  transform: scale(1.1);
+  box-shadow:0.5px 0.1px 0.1px #ece0e0;
+  border-radius: 0.8rem;
+}
+

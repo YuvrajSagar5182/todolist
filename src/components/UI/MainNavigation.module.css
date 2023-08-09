@@ -1,0 +1,30 @@
+.header {
+  background-color: #4f005f;
+  margin: 0%;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding from the list */
+}
+
+.list li {
+  margin: 0 1rem; /* Remove any default margins on list items */
+}
+
+.list a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.list a:hover,
+.list a.active {
+  color: white;
+  font-weight: bold;
+}
