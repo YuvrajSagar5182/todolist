@@ -4,11 +4,11 @@ import { Oval } from 'react-loader-spinner';
 
 const LoadingComponent = () => {
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', height: 'auto', 'zIndex': 10 }}>
             <Oval // Use the specific loader type
                 color="#00BFFF"
-                height={30}
-                width={30}
+                height={25}
+                width={25}
             />
         </div>
     );

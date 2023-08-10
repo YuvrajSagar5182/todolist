@@ -5,7 +5,6 @@ import Button from '../UI/Button';
 import ErrorModal from '../UI/ErrorModal';
 import classes from './AddTodo.module.css';
 import { TodoContext } from '../context/todo-context';
-import LoadingComponent from '../UI/LoadingComponent';
 
 const AddTodo = (props) => {
   const ctx = useContext(TodoContext)
@@ -46,20 +45,20 @@ const AddTodo = (props) => {
           onConfirm={errorHandler}
         />
       )}
-      {ctx.isloading && <LoadingComponent></LoadingComponent>}
-      {!(ctx.isloading) && <Card className={classes.input}>
+      <Card className={classes.input}>
         <form onSubmit={addTodoHandler}>
           <label htmlFor="todo">{props.title}</label>
           <input
             id="todo"
             type="text"
             value={enteredTodo}
-            onChange={todoChangeHandler}
+            onChange={todoChangeHandler}  
           />
           <Button type="submit">{props.buttonText}</Button>
+          
         </form>
       </Card>
-      }
+      
       
     </>
   );

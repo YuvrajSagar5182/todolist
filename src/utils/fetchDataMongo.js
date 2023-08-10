@@ -1,5 +1,5 @@
 
-const mainUrl = 'http://localhost:8080';
+const mainUrl = 'https://todolist-backend-4kkp1ebbv-yuvrajsagar5182.vercel.app';
 
 export const fetchTodos = async () => {
     const response = await fetch(`${mainUrl}/todos`);

@@ -4,16 +4,16 @@ import Card from '../UI/Card';
 import classes from './TodoList.module.css';
 import { TodoContext } from '../context/todo-context';
 import LoadingComponent from '../UI/LoadingComponent';
-const paraStyles = {
-  margin: '2rem auto',
-  width: '90%',
-  maxWidth: '40rem',
-  background: '#4f005f',
-  padding: '1rem',
-  color: 'white',
-  border: '1px solid #ccc',
-  borderRadius: '0.6rem'
-}
+// const paraStyles = {
+//   margin: '2rem auto',
+//   width: '90%',
+//   maxWidth: '40rem',
+//   background: '#4f005f',
+//   padding: '1rem',
+//   color: 'white',
+//   border: '1px solid #ccc',
+//   borderRadius: '0.6rem'
+// }
 
 
 
@@ -27,7 +27,7 @@ const ToDoList = (props) => {
   const mainUL = <>
 {<ul>
         <div className={classes.header}>
-        <h2>Your To-Do's</h2>
+        <h3>Your To-Do's</h3>
         </div>
         {todoList.map((todo) => (
           <li key={todo._id}>
@@ -52,7 +52,7 @@ const ToDoList = (props) => {
   return (
   <>
   {isloading && < LoadingComponent/>}
-  {!isloading && todoList.length === 0 && <p styles={paraStyles}>Nothing to Show</p> }
+  {!isloading && todoList.length === 0 &&  <Card className={classes.todos}><div className={classes.header}><h3>No Todo's Available.</h3></div></Card>  }
   {!isloading && todoList.length > 0 && 
   <Card className={classes.todos}>
       {mainUL}
